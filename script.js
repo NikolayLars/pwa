@@ -19,7 +19,7 @@ function startPwa(firstStart) {
 	}
 
 	window.addEventListener("load", () => {
-		navigator.serviceWorker.register("/service-worker.js")
+		navigator.serviceWorker.register("/PWA-2022/service-worker.js")
 		.then(registration => {
 			console.log("Service Worker is registered", registration);
 			enableButton.parentNode.remove();

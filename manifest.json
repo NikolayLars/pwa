@@ -3,19 +3,19 @@
 	"name": "Progressive Web App Example",
 	"icons": [
 		{
-			"src": "/image/icon-192.png",
+			"src": "/PWA-2022/image/icon-192.png",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/image/icon-512.png",
+			"src": "/PWA-2022/image/icon-512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
 	],
-	"start_url": "/?source=pwa",
+	"start_url": "/PWA-2022/?source=pwa",
 	"background_color": "#3367D6",
 	"display": "standalone",
-	"scope": "/",
+	"scope": "/PWA-2022/",
 	"theme_color": "#3367D6"
 }
