@@ -7,6 +7,18 @@ enableButton.addEventListener("click", function() {
 	startPwa(true);
 });
 
+function updatePage() {
+	fetch(window.location.href).then(function(response) {
+		return response.text();
+	}).then(function(html) {
+		let newDocument = (new DOMParser()).parseFromString(html, "text/html");
+		document.querySelector("div").innerHTML = newDocument.querySelector("div").innerHTML;
+	});
+	setTimeout(updatePage, 900);
+}
+
+updatePage();
+
 if(localStorage["pwa-enabled"]) {
 	startPwa();
 }
@@ -55,3 +67,4 @@ function startPwa(firstStart) {
 		});
 	}
 }
+
