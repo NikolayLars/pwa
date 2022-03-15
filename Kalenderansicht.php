@@ -9,15 +9,10 @@
     <link href="/PWA-2022/fullcalendar/packages/core/main.css" rel="stylesheet">
     <link href="/PWA-2022/fullcalendar/packages/daygrid/main.css" rel="stylesheet">
     
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/PWA-2022/css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="/PWA-2022/css/style.css">    
 </head>
 <body id="calendar-start">
-<h1>Klausurenübersicht als Kalender</h1>
+<h1>Exam Overview – Calendar</h1>
+<p>Add a new Exam:</p>
 <div class="container">
 		<div class="row">
 			<div class="col-sm-8">
@@ -41,7 +36,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">+ Add</button>
+				<button class="add-test">+ Add new Exam</button>
 			</div>
 
 			<div class="content">
