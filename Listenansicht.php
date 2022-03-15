@@ -5,9 +5,9 @@
 </head>
 
 <body>
-<h1>Klausurenübersicht als Liste</h1>
+<h1>Exam Overview – List</h1>
 <div class="row">
-	<p>Füge eine neue Klausur hinzu:</p>
+	<p>Add a new Exam:</p>
 </div>
 	<div class="container">
 		<div class="row">
@@ -17,32 +17,32 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Datum:</label><input type="date"></input>
+				<label>Date:</label><input type="date"></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Modul:</label><input></input>
+				<label>Module:</label><input></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Notizen:</label><textarea></textarea>
+				<label>Notes:</label><textarea></textarea>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">Hinzufügen</button>
+				<button class="add-test">+ Add new Exam</button>
 			</div>
 
 <div>
 	<table class="klausurenliste">
 		<thead>
 			<th>Name</th>
-			<th>Datum</th>
-			<th>Modul</th>
-			<th>Notizen</th>
-			<th>Bearbeitung</th>
+			<th>Date</th>
+			<th>Module</th>
+			<th>Notes</th>
+			<th>Adaptation</th>
 		</thead>
 		<tr>
 			<td>Test</td>

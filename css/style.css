@@ -6,6 +6,10 @@ body {
 	margin-top: 15px;
 }
 
+.fc-unthemed td.fc-today {
+  background-color: #00bbbb !important;
+}
+
 p {
   color: #b3b3b3;
   font-weight: 300; }
