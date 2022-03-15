@@ -56,6 +56,8 @@
 	<button id="enable">Enable the PWA</button>
 </div>
 
+<img class="start-picture" src="/PWA-2022/image/undraw_Online_calendar.png">
+
 <button id="install">Install this app</button>
 <script src="/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
