@@ -68,3 +68,32 @@ function startPwa(firstStart) {
 	}
 }
 
+	
+
+let db = new Dexie('Termine');
+
+	// Declare tables, IDs and indexes
+	db.version(1).stores({
+		termien: '++id, name, module, date, note'
+	});
+
+/*
+const termien = await db.termien
+.toArray();
+
+await db.termien.add({
+	name: 'test',
+	module: 'test modul',
+	date: '01.01.2015',
+	note: 'nur text'
+});
+*/
+
+
+
+			
+		
+
+
+//get dexie and apend table
+

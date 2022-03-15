@@ -36,7 +36,7 @@
 			</div>
 
 <div>
-	<table class="klausurenliste">
+	<table id="liste" class="klausurenliste">
 		<thead>
 			<th>Name</th>
 			<th>Datum</th>
@@ -49,11 +49,12 @@
 			<td>18.03.2022</td>
 			<td>T6 Fortgeschrittene Web-Entwicklung</td>
 			<td>-</td>
-			<td>Hier kommen bearbeiten, checkbox & löschen hin</td>
+			<td><button type="button" class="btn btn-primary">Bearbeiten</button> <input type="checkbox" name="" id=""> <button type="button" class="btn btn-primary">Löschen</button></td>
 		</tr>
 	</table>
 </div>
-
+<script type="" src="/PWA-2022/dexie.js"></script>
+			<script src="/PWA-2022/listScript.js"></script>
 <!-- Sidebar -->
 <nav class="main-menu">
 <div>
