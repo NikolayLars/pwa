@@ -21,6 +21,15 @@ input {
 	margin-top: 2%;
 }
 
+#install {
+	background-color: #00bbbb;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	border: none;
+	padding: 3px;
+	margin-top: 2%;
+}
+
 .klausurenliste {
 	margin-top: 25px;
 }

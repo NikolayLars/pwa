@@ -16,9 +16,6 @@
 			<h1>Klausurenübersicht</h1>
 		</div>
 		<p>Willkommen bei deiner individuellen Klausurenübersicht! Hiermit verpasst du keine Termine mehr und hast deine Klausuren stets im Blick. Viel Spaß bei der Benutzung!</p>
-		<div id="date">
-			<!-- Hier soll das Datum angezeigt werden -->
-		</div>
 	</div>
 </body>
 
@@ -51,10 +48,6 @@
 		</a>
 	</li>   
 </nav>
-
-<div>
-	<button id="enable">Enable the PWA</button>
-</div>
 
 <button id="install">Install this app</button>
 <script src="/script.js"></script>
