@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Klausurenübersicht</title>
+	<title>Exam-Overview</title>
 	<link rel="manifest" href="/PWA-2022/manifest.json" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="/PWA-2022/style.css" rel="stylesheet" />
@@ -14,13 +14,12 @@
 <body>
 	<div class="container">
 		<div class="col-sm-6">
-			<h1>Klausurenübersicht</h1>
+			<h1>Exam Overview</h1>
 		</div>
-		<p>Willkommen bei deiner individuellen Klausurenübersicht! Hiermit verpasst du keine Termine mehr und hast deine Klausuren stets im Blick. Viel Spaß bei der Benutzung!</p>
+		<p>Welcome to your individual exam overview! Here you will never miss a deadline again and always have your exams in view. Have fun using it!</p>
 	</div>
 </body>
 
-<!--Sidebar-->
 <!--Sidebar-->
 <nav class="main-menu">
 <div>
