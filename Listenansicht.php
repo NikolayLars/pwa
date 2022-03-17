@@ -12,27 +12,27 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Name:</label><input></input>
+				<label>Name:</label><input id="name"></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Datum:</label><input type="date"></input>
+				<label>Datum:</label><input id="datum"type="date"></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Modul:</label><input></input>
+				<label>Modul:</label><input id="modul" ></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Notizen:</label><textarea></textarea>
+				<label>Notizen:</label><textarea id="notitzen"></textarea>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">Hinzufügen</button>
+				<button class="add-test" onclick="add()">Hinzufügen</button>
 			</div>
 
 <div>
