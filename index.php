@@ -54,7 +54,7 @@
 <div>
     <button id="enable">Enable the PWA</button>
 </div>
-<button id="install">Install this app</button>
+<button class="button-sytle" id="install">Install this app</button>
 <img class="start-picture" src="/PWA-2022/image/undraw_Online_calendar.png">
 
 <script type="" src="/PWA-2022/dexie.js"></script>

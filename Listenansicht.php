@@ -7,7 +7,7 @@
 <body>
 <h1>Exam Overview – List</h1>
 <div class="row">
-	<p>Add a new Exam:</p>
+	<p class="add-test">Add a new Exam:</p>
 </div>
 	<div class="container">
 		<div class="row">
@@ -32,7 +32,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">+ Add new Exam</button>
+			<button class="button-sytle">+ Add a new Exam:</button>
 			</div>
 
 <div>

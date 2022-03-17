@@ -12,7 +12,7 @@
 </head>
 <body id="calendar-start">
 <h1>Exam Overview – Calendar</h1>
-<p>Add a new Exam:</p>
+<p class="add-test">Add a new Exam:</p>
 <div class="container">
 		<div class="row">
 			<div class="col-sm-8">
@@ -36,7 +36,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">+ Add new Exam</button>
+				<button class="button-sytle">+ Add new Exam</button>
 			</div>
 
 			<div class="content">
