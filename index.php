@@ -17,9 +17,6 @@
 			<h1>Klausurenübersicht</h1>
 		</div>
 		<p>Willkommen bei deiner individuellen Klausurenübersicht! Hiermit verpasst du keine Termine mehr und hast deine Klausuren stets im Blick. Viel Spaß bei der Benutzung!</p>
-		<div id="date">
-			<!-- Hier soll das Datum angezeigt werden -->
-		</div>
 	</div>
 </body>
 
@@ -56,6 +53,8 @@
 <div>
 	<button id="enable">Enable the PWA</button>
 </div>
+
+<img class="start-picture" src="/PWA-2022/image/undraw_Online_calendar.png">
 
 <button id="install">Install this app</button>
 <script type="" src="/PWA-2022/dexie.js"></script>

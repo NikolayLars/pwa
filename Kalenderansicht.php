@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-	<link href="/PWA-2022/style.css" rel="stylesheet" />    
+	<link href="/PWA-2022/style.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">    
+    <link href="/PWA-2022/fonts/icomoon/style.css" rel="stylesheet">
+    <link href="/PWA-2022/fullcalendar/packages/core/main.css" rel="stylesheet">
+    <link href="/PWA-2022/fullcalendar/packages/daygrid/main.css" rel="stylesheet">
+    
 </head>
-
-<h1>Klausurenübersicht als Kalender</h1>
+<body id="calendar-start">
+<h1>Exam Overview – Calendar</h1>
+<p>Add a new Exam:</p>
 <div class="container">
 		<div class="row">
 			<div class="col-sm-8">
@@ -13,27 +21,59 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Datum:</label><input type="date"></input>
+				<label>Date:</label><input type="date"></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Modul:</label><input></input>
+				<label>Module:</label><input></input>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<label>Notizen:</label><textarea></textarea>
+				<label>Notes:</label><textarea></textarea>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-8">
-				<button class="add-test">Hinzufügen</button>
+				<button class="add-test">+ Add new Exam</button>
 			</div>
 
-<div>
-	<p>hier werden die Klausuren angezeigt</p>
-</div>
+			<div class="content">
+    <div id='calendar'></div>
+  </div>
+    
+    
+
+    <script src="/PWA-2022/js/jquery-3.3.1.min.js"></script>
+    <script src="/PWA-2022/js/popper.min.js"></script>
+    <script src="/PWA-2022/js/bootstrap.min.js"></script>
+
+    <script src='/PWA-2022/fullcalendar/packages/core/main.js'></script>
+    <script src='/PWA-2022/fullcalendar/packages/interaction/main.js'></script>
+    <script src='/PWA-2022/fullcalendar/packages/daygrid/main.js'></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid' ],
+      defaultDate: '2022-03-12',
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        
+      ]
+    });
+
+    calendar.render();
+  });
+
+    </script>
+
+    <script src="/PWA-2022/js/main.js"></script>
+</body>
 
 <!-- Sidebar -->
 <nav class="main-menu">
