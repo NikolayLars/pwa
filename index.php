@@ -8,15 +8,17 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="/PWA-2022/style.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	
 </head>
 
 <body>
 	<div class="container">
-		<div class="col-sm-6">
+		<div class="col-m-6">
 			<h1>Exam Overview</h1>
+			<p>Welcome to your individual exam overview! Here you will never miss a deadline again and always have your exams in view. Have fun using it!</p>
+			<button class="button-sytle" id="install">Install this app</button>
+			<br>
+			<img class="start-picture mx-auto d-block" src="/PWA-2022/image/undraw_Online_calendar.png">
 		</div>
-		<p>Welcome to your individual exam overview! Here you will never miss a deadline again and always have your exams in view. Have fun using it!</p>
 	</div>
 </body>
 
@@ -51,10 +53,8 @@
 </nav>
 
 <div>
-    <button id="enable">Enable the PWA</button>
+<button id="enable">Enable the PWA</button>
 </div>
-<button class="button-sytle" id="install">Install this app</button>
-<img class="start-picture" src="/PWA-2022/image/undraw_Online_calendar.png">
 
 <script type="" src="/PWA-2022/dexie.js"></script>
 <script src="/PWA-2022/script.js"></script>
