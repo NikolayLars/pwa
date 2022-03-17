@@ -21,40 +21,39 @@
 </body>
 
 <!--Sidebar-->
+<!--Sidebar-->
 <nav class="main-menu">
 <div>
-	<a class="logo" href="http://startific.com">
+    <a class="logo" href="http://startific.com">
     </a> 
 </div> 
 <div class="scrollbar" id="style-1">
-<ul>	 
-	<li>                                   
-		<a href="index.php">
-			<i class="fa fa-home"></i>
-			<span class="nav-text">Home</span>
-		</a>
-	</li>   
+<ul>     
+    <li>                                   
+        <a href="index.php">
+            <i class="fa fa-home"></i>
+            <span class="nav-text">Home</span>
+        </a>
+    </li>   
    
-	<li>                                 
-		<a href="Listenansicht.php">
-			<i class="fa fa-list"></i>
-			<span class="nav-text">Listenansicht</span>
-		</a>
-	</li>   
+    <li>                                 
+        <a href="Listenansicht.php">
+            <i class="fa fa-list"></i>
+            <span class="nav-text">Listenansicht</span>
+        </a>
+    </li>   
 
-	<li>                                 
-		<a href="Kalenderansicht.php">
-			<i class="fa fa-calendar"></i>
-			<span class="nav-text">Kalenderansicht</span>
-		</a>
-	</li>   
+    <li>                                 
+        <a href="Kalenderansicht.php">
+            <i class="fa fa-calendar"></i>
+            <span class="nav-text">Kalenderansicht</span>
+        </a>
+    </li>   
 </nav>
 
 <div>
-	<button id="enable">Enable the PWA</button>
+    <button id="enable">Enable the PWA</button>
 </div>
-
-<img class="start-picture" src="/PWA-2022/image/undraw_Online_calendar.png">
 
 <button id="install">Install this app</button>
 <script type="" src="/PWA-2022/dexie.js"></script>
