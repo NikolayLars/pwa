@@ -46,10 +46,10 @@ function getDextoListTable() {
 }
 
 async function add() {
-    let name = document.getElementById("name").value;
-    let notitzen = document.getElementById("notitzen").value;
-    let datum = document.getElementById("datum").value;
-    let modul = document.getElementById("modul").value;
+    let name = document.getElementById("inputEmail3").value;
+    let notitzen = document.getElementById("inputNotes").value;
+    let datum = document.getElementById("inputDate").value;
+    let modul = document.getElementById("inputSubject").value;
 
     notitzen = notitzen.replace(/\s/g, '_');
     modul = modul.replace(/\s/g, '_');
