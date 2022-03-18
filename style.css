@@ -73,7 +73,7 @@ padding-left: 0;
 .scrollbar
 {
 
-height: 90%;
+height: 100%;
 width: 100%;
 overflow-y: hidden;
 overflow-x: hidden;
@@ -109,10 +109,10 @@ background-color: #BFBFBF;
 /* Scrollbar End */ 
 
 .fa {
-position: relative;
+position: fixed;
 display: table-cell;
 width: 55px;
-height: 36px;
+
 text-align: center;
 top:12px; 
 font-size:30px;
@@ -124,12 +124,18 @@ overflow:hidden;
 opacity:1;
 }
 
+#sidebar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
 .main-menu {
 background:#F7F7F7;
-position:absolute;
+position: fixed;
 top:0;
 bottom:0;
-height:100%;
+height: max-content;
 left:0;
 width:55px;
 overflow:hidden;

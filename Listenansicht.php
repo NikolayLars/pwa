@@ -97,6 +97,7 @@
 
 
 <!-- Sidebar -->
+<div id="sidebar">
 <nav class="main-menu">
 <div>
 	<a class="logo" href="http://startific.com">
@@ -125,3 +126,4 @@
 		</a>
 	</li>   
 </nav>
+</div>
