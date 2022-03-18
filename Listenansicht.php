@@ -46,7 +46,7 @@
 	</div>
 	<div class="form-group row">
 		<div class="col-sm-8">
-		<button type="submit" onclick="add() class="button-sytle">+ Add a new Exam</button>
+		<button type="submit" onclick="add()" class="button-sytle">+ Add a new Exam</button>
 		</div>
 	</div>
 </form>
@@ -65,27 +65,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-	  <td><button type="button" class="button-sytle">Bearbeiten</button> <input type="checkbox" name="" id=""> <button type="button" class="button-sytle">Löschen</button></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-	  <td>srth</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-	  <td>srth</td>
-    </tr>
+    
   </tbody>
 </table>
 </div>

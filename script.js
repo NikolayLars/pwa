@@ -72,7 +72,7 @@ let db = new Dexie('Termine');
 
     // Declare tables, IDs and indexes
     db.version(1).stores({
-        termien: '++id, name, module, date, note'
+        termien: 'id, name, module, date, note'
     });
 
 /*

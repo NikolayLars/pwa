@@ -8,26 +8,36 @@ const liste = document.getElementById("liste");
 let dbInhalt;
 getDexieList();
 async function getDexieList() {
-    dbInhalt = await db.termien.toArray();
     db.termien.clear();
+    
 
     await fetch("getTermine.php").then(response => response.json()).then(data => data.forEach(async element => {
         await db.termien.add({
+            id: element.ID,
             name: element.name,
             module: element.modul,
             date: element.datum,
             note: element.note
         });
     }));
-        
-
-
+    dbInhalt = await db.termien.toArray();
     getDextoListTable();
 }
 
 
 
 function getDextoListTable() {
+    liste.innerHTML=`
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Notes</th>
+	  <th scope="col">Editing</th>
+    </tr>
+  </thead>
+    `;
 	let row = document.createElement("tr");
     dbInhalt.forEach(element => {
         console.log(element.datum);
@@ -37,7 +47,7 @@ function getDextoListTable() {
 			<td>${element.date}</td>
 			<td>${element.module}</td>
 			<td>${element.note}</td>
-			<td><button type="button" class="btn btn-primary">Bearbeiten</button> <input type="checkbox" name="" id=""> <button type="button" class="btn btn-primary">Löschen</button></td>
+			<td><button type="button" class="btn btn-primary">Bearbeiten</button> <input type="checkbox" name="" id=""> <button type="button" onclick="deleteDexie(this)" class="btn btn-primary">Löschen</button></td>
 	`;
     console.log(row.cloneNode(true));
     liste.appendChild(row.cloneNode(true));
@@ -57,7 +67,18 @@ async function add() {
     console.log(name + " " + notitzen + " " + datum + " " + modul);
     
     
-    await fetch(`setTermin.php?name=${name}&datum=${datum}&note=${notitzen}&modul=${modul}`).then(response => response.text()).then(data =>
-        getDexieList());
+    await fetch(`setTermin.php?name=${name}&datum=${datum}&note=${notitzen}&modul=${modul}`).then(response => response.text()).then(location.reload());
     
+    
+}
+
+async function deleteDexie(e){
+    let deleteId = e.parentNode.parentNode.id;
+
+if(navigator.onLine) { 
+    await fetch(`delete.php?id=${deleteId}`).then(location.reload());
+} else {
+    alert("Du musst online sein für diese Funktion");
+}
+
 }
