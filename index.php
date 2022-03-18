@@ -40,14 +40,14 @@
     <li>                                 
         <a href="Listenansicht.php">
             <i class="fa fa-list"></i>
-            <span class="nav-text">Listenansicht</span>
+            <span class="nav-text">List View</span>
         </a>
     </li>   
 
     <li>                                 
         <a href="Kalenderansicht.php">
             <i class="fa fa-calendar"></i>
-            <span class="nav-text">Kalenderansicht</span>
+            <span class="nav-text">Calendar View</span>
         </a>
     </li>   
 </nav>
