@@ -18,6 +18,7 @@
 <div class="row">
 	<p class="add-test">Add a new Exam:</p>
 </div>
+
 <form>
 	<div class="form-group row">
 		<label for="inputName" class="col-sm-2 col-form-label">Name:</label>
@@ -45,10 +46,11 @@
 	</div>
 	<div class="form-group row">
 		<div class="col-sm-8">
-		<button type="submit" class="button-sytle">+ Add a new Exam</button>
+		<button type="submit" onclick="add() class="button-sytle">+ Add a new Exam</button>
 		</div>
 	</div>
 </form>
+
 
 
 <div class="col-sm-10">

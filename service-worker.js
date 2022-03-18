@@ -11,6 +11,7 @@ self.addEventListener("install", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
+	if(!navigator.onLine) {
 	event.respondWith(
 		caches.open("pwa").then(function(cache) {
 			return cache.match(event.request).then(function(response) {
@@ -24,4 +25,5 @@ self.addEventListener("fetch", function(event) {
 			});
 		})
 	);
+	};
 });
