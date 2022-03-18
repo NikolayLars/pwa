@@ -1,6 +1,6 @@
 {
-	"short_name": "PWA Ex.",
-	"name": "Progressive Web App Example",
+	"short_name": "Your Exams",
+	"name": "Different Exam Overviews",
 	"icons": [
 		{
 			"src": "/PWA-2022/image/icon-192.png",
@@ -17,5 +17,5 @@
 	"background_color": "#3367D6",
 	"display": "standalone",
 	"scope": "/PWA-2022/",
-	"theme_color": "#3367D6"
+	"theme_color": "#00bbbb"
 }
