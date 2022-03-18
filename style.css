@@ -4,14 +4,11 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-top: 15px;
+    z-index: 1;
 }
 
-.box{
-	margin-left: 2%;
-	padding-left: 2%;
-}
 
 .start-picture{
 	width: 45%;
@@ -127,6 +124,7 @@ opacity:1;
     position: fixed !important;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .main-menu {
