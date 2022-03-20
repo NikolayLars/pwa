@@ -78,7 +78,7 @@ async function add() {
     console.log(name + " " + notitzen + " " + datum + " " + modul);
     
     
-    await fetch(`setTermin.php?name=${name}&datum=${datum}&note=${notitzen}&modul=${modul}`).then(response => response.text()).then(location.reload());
+    await fetch(`setTermin.php?name=${name}&datum=${datum}&note=${notitzen}&modul=${modul}`).then(response => response.text()).then();
     
     
 }
@@ -102,7 +102,7 @@ function notifyMe() {
     else {
         console.log('test');
      let notification = new Notification('Hey, es koennte Updates geben!', {
-      icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+      icon: '/PWA-2022/image/icon-192.png',
       body: 'Du bist wieder Online!',
      });
      notification.onclick = function() {
