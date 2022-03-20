@@ -41,13 +41,13 @@
 	<div class="form-group row">
 		<label for="inputSubject" class="col-sm-2 col-form-label">Subject:</label>
 		<div class="col-sm-8">
-		<input type="text" class="form-control" id="inputSubject"></input>
+		<input type="text" class="form-control" id="inputSubject" placeholder="Subject Name"></input>
 		</div>
 	</div>
 	<div class="form-group row">
 		<label for="inputNotes" class="col-sm-2 col-form-label">Notes:</label>
 		<div class="col-sm-8">
-		<textarea type="text" class="form-control" id="inputNotes"></textarea>
+		<textarea type="text" class="form-control" id="inputNotes" placeholder="Your individual notes"></textarea>
 		</div>
 	</div>
 	<div class="form-group row">
