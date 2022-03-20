@@ -52,7 +52,7 @@
 	</div>
 	<div class="form-group row">
 		<div class="col-sm-8">
-		<button type="submit" class="button-sytle">+ Add a new Exam</button>
+		<button onclick="add()" class="button-sytle">+ Add a new Exam</button>
 		</div>
 	</div>
 </form>
@@ -124,3 +124,5 @@
 	</li>   
 </nav>
 </div>
+<script type="" src="/PWA-2022/dexie.js"></script>
+<script src="/PWA-2022/kalenderDx.js?t"> </script>

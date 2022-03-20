@@ -8,23 +8,29 @@ const liste = document.getElementById("liste");
 let dbInhalt;
 getDexieList();
 async function getDexieList() {
-    db.termien.clear();
-    
 
-    await fetch("getTermine.php").then(response => response.json()).then(data => data.forEach(async element => {
-        await db.termien.add({
-            id: element.ID,
-            name: element.name,
-            module: element.modul,
-            date: element.datum,
-            note: element.note
-        });
-    }));
+
+
+    if (navigator.onLine) {
+        db.termien.clear();
+        await fetch("getTermine.php").then(response => response.json()).then(data => data.forEach(async element => {
+            await db.termien.add({
+                id: element.ID,
+                name: element.name,
+                module: element.modul,
+                date: element.datum,
+                note: element.note
+            });
+        }));
+    
+    }
+
+    
     dbInhalt = await db.termien.toArray();
     getDextoListTable();
 }
 
-
+window.addEventListener('online', getDextoListTable());
 
 function getDextoListTable() {
     liste.innerHTML=`
@@ -39,19 +45,24 @@ function getDextoListTable() {
   </thead>
     `;
 	let row = document.createElement("tr");
-    dbInhalt.forEach(element => {
-        console.log(element.datum);
-        row.id=element.id;
-        row.innerHTML = `
-	<td>${element.name}</td>
-			<td>${element.date}</td>
-			<td>${element.module}</td>
-			<td>${element.note}</td>
-			<td><button type="button" class="btn btn-primary">Bearbeiten</button> <input type="checkbox" name="" id=""> <button type="button" onclick="deleteDexie(this)" class="btn btn-primary">Löschen</button></td>
-	`;
-    console.log(row.cloneNode(true));
-    liste.appendChild(row.cloneNode(true));
-    });
+    try {
+        dbInhalt.forEach(element => {
+            console.log(element.datum);
+            row.id=element.id;
+            row.innerHTML = `
+        <td>${element.name}</td>
+                <td>${element.date}</td>
+                <td>${element.module}</td>
+                <td>${element.note}</td>
+                <td><button type="button" onclick="deleteDexie(this)" class="btn btn-primary">Löschen</button></td>
+        `;
+        console.log(row.cloneNode(true));
+        liste.appendChild(row.cloneNode(true));
+        });
+    } catch (error) {
+        
+    }
+    
 	
 }
 
@@ -82,3 +93,20 @@ if(navigator.onLine) {
 }
 
 }
+
+
+window.addEventListener('online', notifyMe);
+function notifyMe() {
+    if (Notification.permission !== 'granted')
+     Notification.requestPermission();
+    else {
+        console.log('test');
+     let notification = new Notification('Hey, es koennte Updates geben!', {
+      icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+      body: 'Du bist wieder Online!',
+     });
+     notification.onclick = function() {
+      location.reload();
+     };
+    }
+   }

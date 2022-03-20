@@ -1,6 +1,10 @@
 let installEvent = null;
 let installButton = document.getElementById("install");
 let enableButton = document.getElementById("enable");
+document.addEventListener('DOMContentLoaded', function() {
+    if (Notification.permission !== 'granted') Notification.requestPermission();
+});
+
 
 enableButton.addEventListener("click", function() {
     this.disabled = true;

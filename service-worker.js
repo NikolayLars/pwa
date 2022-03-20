@@ -11,7 +11,8 @@ self.addEventListener("install", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
-	if(!navigator.onLine) {
+	console.log(event.request.url);
+	if(!event.request.url.includes("delete")||!event.request.url.includes("Termine")) {
 	event.respondWith(
 		caches.open("pwa").then(function(cache) {
 			return cache.match(event.request).then(function(response) {
