@@ -8,10 +8,10 @@ $modul=$_GET['modul'];
 $note = str_replace( "_", " ", $note);
 $modul = str_replace( "_", " ", $modul);
 $name = str_replace( "_", " ", $name);
+echo ("SELECT * FROM termine WHERE name = $name AND modul = $modul");
 
 
-
-$sql = $mysqli ->query ("SELECT * FROM termine WHERE name = $name AND modul = $modul");
+$sql = $mysqli ->query ("SELECT * FROM termine WHERE name = '$name' AND modul = '$modul'");
     $row = $sql->fetch_assoc();
     $rows = $sql -> num_rows;
     if($rows > 0){
